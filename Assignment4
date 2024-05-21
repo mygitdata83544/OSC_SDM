@@ -1,0 +1,118 @@
+sunbeam@sunbeam-harshal:~/Desktop$ touch data.txt
+
+sunbeam@sunbeam-harshal:~/Desktop$ cat > data.txt
+
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+
+1)
+  No of Words:-
+  
+  sunbeam@sunbeam-harshal:~/Desktop$ wc --words data.txt
+  25 data.txt
+  
+  No of Characters:-
+  sunbeam@sunbeam-harshal:~/Desktop$ wc --chars data.txt
+  145 data.txt
+  
+  No of Lines:-
+  sunbeam@sunbeam-harshal:~/Desktop$ wc --lines data.txt
+  6 data.txt
+  
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+2)
+
+sunbeam@sunbeam-harshal:~/Desktop$ grep "files" data.txt
+
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3)
+sunbeam@sunbeam-harshal:~/Desktop$ grep "file" data.txt
+
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4)
+sunbeam@sunbeam-harshal:~/Desktop$ grep -v "files" data.txt
+
+Linux is open source.
+In Linux everything is file
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5)
+
+sunbeam@sunbeam-harshal:~/Desktop$ grep "have" data.txt
+
+files have permissions.
+files have inode no.
+files have size.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6)
+
+sunbeam@sunbeam-harshal:~/Desktop$ grep "^f" data.txt
+
+files have permissions.
+files have inode no.
+files have size.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+7)
+
+sunbeam@sunbeam-harshal:~/Desktop$ grep "[.]$" data.txt
+
+Linux is open source.
+files have permissions.
+files have inode no.
+files have size.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+8)
+
+sunbeam@sunbeam-harshal:~/Desktop$ head -2 data.txt
+
+Linux is open source.
+In Linux everything is file
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+9)
+
+sunbeam@sunbeam-harshal:~/Desktop$ tail -3 data.txt
+
+files have inode no.
+files have size.
+there are several types of files
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+10)
+
+sunbeam@sunbeam-harshal:~/Desktop$ tail -n +3 data.txt | head -n -1
+
+
+files have permissions.
+files have inode no.
+files have size.
+
