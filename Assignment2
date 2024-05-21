@@ -1,0 +1,243 @@
+1) List the directory contents date wise sorted. ( man ls)
+
+ls -lt
+total 4240
+-rw-rw-r--  1 sunbeam sunbeam     104 May 20 18:01  demo.txt
+-rw-rw-r--  1 sunbeam sunbeam       0 May 20 18:00  dac.txt
+drwxrwxr-x 10 sunbeam sunbeam    4096 May 20 17:45  PRACTICE
+drwxrwxr-x  9 sunbeam sunbeam    4096 May 20 16:45  sunbeam_git_data
+-rw-rw-r--  1 sunbeam sunbeam   19520 May 16 15:00  ADS_83544.zip
+drwxrwxr-x  2 sunbeam sunbeam    4096 May 16 14:58  ADS_240340820035
+-rw-rw-r--  1 sunbeam sunbeam 4264038 May  7 19:05  ADS_240340820035.zip
+drwxrwxr-x  4 sunbeam sunbeam    4096 May  2 18:53  Client-Server
+drwxrwxr-x  4 sunbeam sunbeam    4096 Apr 26 19:49  Personalgitdata
+drwxrwxr-x  6 sunbeam sunbeam    4096 Apr 24 13:49  PERSONALGITDATA
+-rwxrw-r--  1 sunbeam sunbeam     377 Apr  2 22:30  sts4.desktop
+drwxrwxr-x  4 sunbeam sunbeam    4096 Mar 31 23:39 'Cpp program'
+-rw-rw-r--  1 sunbeam sunbeam    8151 Mar 30 18:52  CPP_240340820035.zip
+drwxrwxr-x  2 sunbeam sunbeam    4096 Mar 30 16:30  CPP_240340820035
+-rw-rw-r--  1 sunbeam sunbeam     277 Mar 15 22:51  Password
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+2)
+List the directory contents size wise sorted.(man ls)
+
+ls -lS
+total 4240
+-rw-rw-r--  1 sunbeam sunbeam 4264038 May  7 19:05  ADS_240340820035.zip
+-rw-rw-r--  1 sunbeam sunbeam   19520 May 16 15:00  ADS_83544.zip
+-rw-rw-r--  1 sunbeam sunbeam    8151 Mar 30 18:52  CPP_240340820035.zip
+drwxrwxr-x  2 sunbeam sunbeam    4096 May 16 14:58  ADS_240340820035
+drwxrwxr-x  4 sunbeam sunbeam    4096 May  2 18:53  Client-Server
+drwxrwxr-x  2 sunbeam sunbeam    4096 Mar 30 16:30  CPP_240340820035
+drwxrwxr-x  4 sunbeam sunbeam    4096 Mar 31 23:39 'Cpp program'
+drwxrwxr-x  4 sunbeam sunbeam    4096 Apr 26 19:49  Personalgitdata
+drwxrwxr-x  6 sunbeam sunbeam    4096 Apr 24 13:49  PERSONALGITDATA
+drwxrwxr-x 10 sunbeam sunbeam    4096 May 20 17:45  PRACTICE
+drwxrwxr-x  9 sunbeam sunbeam    4096 May 20 16:45  sunbeam_git_data
+-rwxrw-r--  1 sunbeam sunbeam     377 Apr  2 22:30  sts4.desktop
+-rw-rw-r--  1 sunbeam sunbeam     277 Mar 15 22:51  Password
+-rw-rw-r--  1 sunbeam sunbeam     104 May 20 18:01  demo.txt
+-rw-rw-r--  1 sunbeam sunbeam       0 May 20 18:00  dac.txt
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+3)
+List directory contents along with their inode no. (man ls)
+
+ls -li
+total 4240
+8413685 drwxrwxr-x  2 sunbeam sunbeam    4096 May 16 14:58  ADS_240340820035
+8154278 -rw-rw-r--  1 sunbeam sunbeam 4264038 May  7 19:05  ADS_240340820035.zip
+8130873 -rw-rw-r--  1 sunbeam sunbeam   19520 May 16 15:00  ADS_83544.zip
+ 917649 drwxrwxr-x  4 sunbeam sunbeam    4096 May  2 18:53  Client-Server
+8259298 drwxrwxr-x  2 sunbeam sunbeam    4096 Mar 30 16:30  CPP_240340820035
+8145913 -rw-rw-r--  1 sunbeam sunbeam    8151 Mar 30 18:52  CPP_240340820035.zip
+8390072 drwxrwxr-x  4 sunbeam sunbeam    4096 Mar 31 23:39 'Cpp program'
+8128798 -rw-rw-r--  1 sunbeam sunbeam       0 May 20 18:00  dac.txt
+8130130 -rw-rw-r--  1 sunbeam sunbeam     104 May 20 18:01  demo.txt
+8166631 -rw-rw-r--  1 sunbeam sunbeam     277 Mar 15 22:51  Password
+8130643 drwxrwxr-x  4 sunbeam sunbeam    4096 Apr 26 19:49  Personalgitdata
+8259399 drwxrwxr-x  6 sunbeam sunbeam    4096 Apr 24 13:49  PERSONALGITDATA
+8260750 drwxrwxr-x 10 sunbeam sunbeam    4096 May 20 17:45  PRACTICE
+8127326 -rwxrw-r--  1 sunbeam sunbeam     377 Apr  2 22:30  sts4.desktop
+8127575 drwxrwxr-x  9 sunbeam sunbeam    4096 May 20 16:45  sunbeam_git_data
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4)
+List the contents of the subdirectory.
+
+ls *
+ ADS_240340820035.zip   ADS_83544.zip   CPP_240340820035.zip   dac.txt   demo.txt   Password   sts4.desktop
+
+ADS_240340820035:
+CandidateList.js  JWT.js  log.js  package.json  package-lock.json  VoteSubmit.js
+
+Client-Server:
+Client  server
+
+CPP_240340820035:
+a.out  CPP_Lab_Exam.cpp
+
+'Cpp program':
+a.out              Assignment1_2a.cpp  Assignment1_3.cpp  Assignment7.cpp  Day1         Day1_02.cpp  First.cpp
+Assignment1_1.cpp  Assignment1_2b.cpp  Assignment6_3.cpp  Assignment8.cpp  day10_1.cpp  Day1_03.cpp
+
+Personalgitdata:
+DBT  Rent-A-Ride  Rent-A-Ride.zip
+
+PERSONALGITDATA:
+CPP  DBT  JAVA  WPT
+
+PRACTICE:
+ a.out             Assignment5.cpp               'Data Structure'   Day2   Day4_1.cpp   Day5_2.cpp   Java   WPT
+ Assignment4.cpp  'CPP Practice Program in one'   Day1              Day3   Day5_1.cpp   Exercise     OS
+
+sunbeam_git_data:
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+5)
+Create a file, write your surname and name in it and save.
+touch Name.txt
+
+ cat > Name.txt
+Harshal Mutyalwar
+
+i) now open the same file and add your address in it and save.
+
+cat >> Name.txt
+Ghatanji, Yavatmal
+
+ii) reopen the same file and check your name and address in it.
+
+cat Name.txt
+Harshal Mutyalwar
+Ghatanji, Yavatmal
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+6)
+how to change the time stamp of file (man touch)
+
+touch -t 202405201850.00 Name.txt
+sunbeam@sunbeam-harshal:~/Desktop$ ls -l Name.txt
+-rw-rw-r-- 1 sunbeam sunbeam 37 May 20 18:50 Name.txt
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7)
+
+sunbeam@sunbeam-harshal:~/Desktop$ mkdir one
+
+sunbeam@sunbeam-harshal:~/Desktop$ cd one
+
+sunbeam@sunbeam-harshal:~/Desktop/one$ touch 1.txt 11.txt 111.txt
+
+sunbeam@sunbeam-harshal:~/Desktop/one$ mkdir two
+
+sunbeam@sunbeam-harshal:~/Desktop/one$ cd two
+
+sunbeam@sunbeam-harshal:~/Desktop/one/two$ touch 2.txt 22.txt 222.txt
+
+sunbeam@sunbeam-harshal:~/Desktop/one/two$ mkdir three
+
+sunbeam@sunbeam-harshal:~/Desktop/one/two$ cd three
+
+sunbeam@sunbeam-harshal:~/Desktop/one/two/three$ touch 3.txt 33.txt 333.txt
+
+sunbeam@sunbeam-harshal:~/Desktop/one/two/three$ mkdir four
+
+sunbeam@sunbeam-harshal:~/Desktop/one/two/three$ cd four
+
+sunbeam@sunbeam-harshal:~/Desktop/one/two/three/four$ touch 4.txt 44.txt 444.txt
+
+sunbeam@sunbeam-harshal:~/Desktop/one/two/three/four$ mkdir five
+
+sunbeam@sunbeam-harshal:~/Desktop/one/two/three/four$ cd five
+
+sunbeam@sunbeam-harshal:~/Desktop/one/two/three/four/five$ touch 5.txt 55.txt 555.txt
+
+sunbeam@sunbeam-harshal:~/Desktop/one/two/three/four/five$ cd ~
+
+sunbeam@sunbeam-harshal:~$ 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+8)
+1)
+sunbeam@sunbeam-harshal:~/Desktop$ ls one/two/three/four/five
+555.txt  55.txt  5.txt
+
+
+2)
+cat >> 44.txt
+Harshal
+
+
+3)
+sunbeam@sunbeam-harshal:~/Desktop/one/two/three/four/five$ rm 555.txt
+
+4)
+sunbeam@sunbeam-harshal:~/Desktop$ cd one/two/three/four/five
+
+
+5)
+sunbeam@sunbeam-harshal:~$ cd Desktop/one/two/three
+
+sunbeam@sunbeam-harshal:~/Desktop/one/two/three$ cat >> 3.txt
+
+DAC-Karad
+
+sunbeam@sunbeam-harshal:~/Desktop/one/two/three$ cat 3.txt
+DAC-Karad
+
+6)
+
+sunbeam@sunbeam-harshal:~/Desktop/one/two/three$ ls ../../two
+222.txt  22.txt  2.txt  three
+
+
+7)
+sunbeam@sunbeam-harshal:~/Desktop/one/two/three/four/five$ rm ../../../222.txt
+
+
+8)
+sunbeam@sunbeam-harshal:~/Desktop/one/two/three/four/five$ cd ../../../../
+sunbeam@sunbeam-harshal:~/Desktop/one$ 
+
+
+9)
+sunbeam@sunbeam-harshal:~/Desktop/one$ rm two/three/four/five/*
+
+
+10)
+sunbeam@sunbeam-harshal:~/Desktop/one$ rmdir two/three/four/five
+
+
+11)
+sunbeam@sunbeam-harshal:~/Desktop/one$ rm -r two/three/four
+
+12)
+sunbeam@sunbeam-harshal:~/Desktop/one$ cd ~
+sunbeam@sunbeam-harshal:~$ 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+9)
+sunbeam@sunbeam-harshal:~$ touch -t 202405211850.00 Desktop/one/two/three/3.txt
+
+sunbeam@sunbeam-harshal:~$ ls -lt Desktop/one/two/three/3.txt
+
+-rw-rw-r-- 1 sunbeam sunbeam 10 May 21 18:50 Desktop/one/two/three/3.txt
+
